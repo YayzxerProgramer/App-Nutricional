@@ -74,7 +74,110 @@
         <button>Registrar Comida</button>
     </aside>
     <main>
-        <main>
+        <section class="inicio-hero" id="inicio-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Bienvenido a <span class="text-primary">Vitality</span></h1>
+                    <p class="hero-subtitle">Tu compañero inteligente para una alimentación saludable</p>
+
+                    <div class="hero-description">
+                        <p>Vitality es tu aplicación nutricional personal diseñada para ayudarte a alcanzar tus metas de
+                            salud. Registra tus comidas, monitorea tu progreso y toma decisiones más informadas sobre tu
+                            alimentación diaria.</p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon"></div>
+                            <h3>Registro Fácil</h3>
+                            <p>Registra tus comidas en segundos con nuestra base de datos extensa</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"></div>
+                            <h3>Seguimiento</h3>
+                            <p>Visualiza tu progreso con estadísticas detalladas y gráficas</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"></div>
+                            <h3>Metas Personales</h3>
+                            <p>Establece y alcanza objetivos nutricionales adaptados a ti</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"></div>
+                            <h3>Historial Completo</h3>
+                            <p>Consulta todo tu historial alimenticio cuando lo necesites</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="document.querySelector('[data-section=registro]').click()">
+                            Registrar Primera Comida
+                        </button>
+                        <button class="btn-secondary"
+                            onclick="document.querySelector('[data-section=historial]').click()">
+                            Ver Mi Historial
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="food-collage">
+                        <div class="food-item food-1">V</div>
+                        <div class="food-item food-2">I</div>
+                        <div class="food-item food-3">T</div>
+                        <div class="food-item food-4">A</div>
+                        <div class="food-item food-5">L</div>
+                        <div class="food-item food-6">I</div>
+                        <div class="food-item food-7">T</div>
+                        <div class="food-item food-8">Y</div>
+                    </div>
+                    <div class="stats-float">
+                        <div class="stat-float-item">
+                            <span class="stat-number">2,150</span>
+                            <span class="stat-label">kcal hoy</span>
+                        </div>
+                        <div class="stat-float-item">
+                            <span class="stat-number">128g</span>
+                            <span class="stat-label">proteínas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de estadísticas rápidas -->
+            <div class="quick-stats">
+                <div class="stat-card">
+                    <div class="stat-icon"></div>
+                    <div class="stat-info">
+                        <span class="stat-value">14</span>
+                        <span class="stat-label">Comidas registradas</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"></div>
+                    <div class="stat-info">
+                        <span class="stat-value">7</span>
+                        <span class="stat-label">Días consecutivos</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"></div>
+                    <div class="stat-info">
+                        <span class="stat-value">85%</span>
+                        <span class="stat-label">Meta cumplida</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"></div>
+                    <div class="stat-info">
+                        <span class="stat-value">12</span>
+                        <span class="stat-label">Alimentos favoritos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comidas-section" id="comidas-section" style="display: none;">
             <div class="filtros">
                 <button class="filtro-btn">
                     <i data-lucide="calendar"></i> Última semana ▾
@@ -111,18 +214,14 @@
                 </div>
                 <div class="comidas-lista" id="lista-container"></div>
             </div>
-        </main>
-
-        <script src="/Datos/Datos.js"></script>
-        <script src="/js/main.js"></script>
-        <script src="/js/dashboard.js"></script>
-        <script src="https://unpkg.com/lucide@latest"></script>
-        <script>lucide.createIcons();</script>
+        </section>
     </main>
-    <footer>
 
-    </footer>
+    <script src="/Datos/Datos.js"></script>
+    <script src="/js/main.js"></script>
     <script src="/js/dashboard.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
 </body>
 
 </html>
