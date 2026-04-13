@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120rem;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.register__side--left {
+    width: 55%;
+    height: 100%;
+    background: url('img-temp.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.register__brand {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    color: white;
+}
+
+.register__brand-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.register__brand-tagline{
+    max-width: 39rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.register__side--right {
+    height: 100%;
+    width: 60%;
+    padding-left: 30rem;
+    padding-top: 10rem;
+}
+
+.register__title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+
+.register__subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #777;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+.form__field label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.form__field input {
+    padding: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form__row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form__check {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.form__submit {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    background: #2e7d32;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.form__login {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.form__login a {
+    color: #2e7d32;
+    text-decoration: none;
+}

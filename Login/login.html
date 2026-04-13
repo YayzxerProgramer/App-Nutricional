@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="login.css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div>
+        <h1>Vitality</h1>
+        <p>Accede a tu sistema y continúa tu proceso.</p>
+      </div>
+
+      <div class="message">"Un buen sistema comienza con un buen login."</div>
+    </div>
+
+    <div class="right">
+      <h2>Iniciar Sesión</h2>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <label>Usuario:</label>
+          <input type="text" id="usuario" />
+          <span id="usuarioError" class="error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Contraseña:</label>
+          <div class="password-container">
+            <input type="password" id="contrasena" />
+            <span id="contrasenaVer">ver contra</span>
+          </div>
+          <span id="contrasenaError" class="error"></span>
+        </div>
+
+        <button type="submit">Entrar</button>
+
+        <p id="mensaje"></p>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="../js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<main>
+    <div class="filtros">
+        <button class="filtro-btn">
+            <i data-lucide="calendar"></i> Última semana ▾
+        </button>
+        <button class="filtro-btn">
+            <i data-lucide="sliders-horizontal"></i> Tipos de Comidas ▾
+        </button>
+        <button class="filtro-btn">
+            <i data-lucide="zap"></i> Rango de calorías ▾
+        </button>
+        <span class="exportar-btn">EXPORTAR DATOS</span>
+    </div>
+
+    <div class="dia-seccion">
+        <div class="dias-header">
+            <span class="dia-titulo">Hoy, Marzo 12</span>
+            <div class="dia-estadistica">
+                <span>Total: <strong id="total-kcal">0 kcal</strong></span>
+                <span>|</span>
+                <span><span class="proteina-dot"></span><span id="total-proteinas">0</span>g Proteínas</span>
+            </div>
+        </div>
+        <div class="cards" id="cards-container"></div>
+    </div>
+
+    <div class="dia-seccion">
+        <div class="dias-header">
+            <span class="dia-titulo">Ayer, Marzo 11</span>
+            <div class="dia-estadistica">
+                <span>Total: <strong>2,105 kcal</strong></span>
+                <span>|</span>
+                <span><span class="proteina-dot"></span>128g Proteínas</span>
+            </div>
+        </div>
+        <div class="comidas-lista" id="lista-container"></div>
+    </div>
+</main>
+
+<script src="/Datos/Datos.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/dashboard.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>

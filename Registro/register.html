@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="register">
+
+
+        <div class="register__side register__side--left">
+            <div class="register__brand">
+                <div class="register__brand-name">Vitality</div>
+                <div class="register__brand-tagline">Adéntrate en el santuario de la nutrición consciente. Tu camino
+                    hacia una versión más
+                    vital de ti mismo comienza con un solo paso.</div>
+            </div>
+        </div>
+
+        <div class="register__side register__side--right">
+
+            <h2 class="register__title">Crear Cuenta</h2>
+            <p class="register__subtitle">
+                Empieza a controlar tu alimentación con claridad editorial.
+            </p>
+
+            <form class="form" id="registerForm">
+
+                <div class="form__field">
+                    <label class="form__label">Nombre Completo</label>
+                    <input class="form__input" name="nombre" type="text" placeholder="John Doe">
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label">Correo Electronico</label>
+                    <input class="form__input" name="correo" type="email" placeholder="hello@vitality.com">
+                </div>
+
+                <div class="form__row">
+                    <div class="form__field">
+                        <label class="form__label">Contraseña</label>
+                        <input class="form__input" name="contrasena" type="password" placeholder="********">
+                    </div>
+
+                    <div class="form__field">
+                        <label class="form__label">Confirmar</label>
+                        <input class="form__input" name="confirmar" type="password" placeholder="********">
+                    </div>
+                </div>
+
+                <div class="form__check">
+                    <input class="form__checkbox" type="checkbox" name="terms" id="terms">
+                    <label class="form__check-label" for="terms">
+                        Acepto los Términos de servicio y la Política de privacidad.
+                    </label>
+                </div>
+
+                <input class="form__submit" type="submit" value="Create Account">
+
+                <p class="form__login">
+                    ¿Ya formas parte de la comunidad?
+                    <a class="form__login-link" href="login.html">Iniciar Sesion</a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+
+</html>
